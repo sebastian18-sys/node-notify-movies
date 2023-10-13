@@ -9,9 +9,10 @@ import { config } from "dotenv";
 const managerRouter = express.Router()
 config()
 
-managerRouter.get('/test', (req, res) => {
+managerRouter.get('/', (req, res) => {
   res.json({ status: "Work!", env: process.env.TEST_ENV_DEPLOY })
 })
+
 
 managerRouter.get('/send-notity-movies', (req, res) => {
 
