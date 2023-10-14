@@ -10,4 +10,5 @@ app.use('/api/', managerRouter)
 app.listen(PORT, async() => {
   console.log(`Listen on port ${PORT}`)
   await fetch("https://node-notify-movies.vercel.app/api/send-notity-movies")
+  // await fetch("http://localhost:8000/api/send-notity-movies")
 })
