@@ -18,8 +18,8 @@ managerRouter.get('/', (req, res) => {
 managerRouter.get('/send-notity-movies', (req, res) => {
 
   let rule = new schedule.RecurrenceRule();
-  rule.hour = 12;
-  rule.minute = 30;
+  rule.hour = 22;
+  rule.minute = 0;
   rule.second = 0;
   rule.dayOfWeek = new schedule.Range(0, 6);
 
