@@ -10,7 +10,8 @@ const managerRouter = express.Router()
 config()
 
 managerRouter.get('/', (req, res) => {
-  res.json({ status: "Work!", env: process.env.TEST_ENV_DEPLOY })
+  const date = new Date()
+  res.json({ status: "Work!", env: process.env.TEST_ENV_DEPLOY, date })
 })
 
 
