@@ -4,7 +4,7 @@ import managerRouter from "./routes/send-notify-sms.js"
 const app = express()
 const PORT = process.env.PORT || 8000
 
-app.use('/api/', managerRouter)
+app.use('/api', managerRouter)
 
 
 app.listen(PORT, async() => {

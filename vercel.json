@@ -14,7 +14,7 @@
   "crons": [
     {
       "path": "/api/send-notity-movies",
-      "schedule": "12 13 * * *" 
+      "schedule": "0 14 * * *" 
     }
   ]
 }
