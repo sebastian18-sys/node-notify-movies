@@ -17,13 +17,13 @@ managerRouter.get('/', (req, res) => {
 
 managerRouter.get('/send-notity-movies', (req, res) => {
 
-  let rule = new schedule.RecurrenceRule();
-  rule.hour = 18;
-  rule.minute = 2;
-  rule.second = 0;
-  rule.dayOfWeek = new schedule.Range(0, 6);
+  // let rule = new schedule.RecurrenceRule();
+  // rule.hour = 18;
+  // rule.minute = 2;
+  // rule.second = 0;
+  // rule.dayOfWeek = new schedule.Range(0, 6);
 
-  schedule.scheduleJob(rule, async function() {
+  // schedule.scheduleJob(rule, async function() {
     console.log('this will run everyday at 8:00am');
   
     ;(async () => {
@@ -82,7 +82,7 @@ managerRouter.get('/send-notity-movies', (req, res) => {
       await browser.close()
     })()
   
-  })
+  // })
 
   res.json({ result: "OK"})
 

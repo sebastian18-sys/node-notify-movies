@@ -10,5 +10,11 @@
       "src": "/(.*)",
       "dest": "/src/index.js"
     }
+  ],
+  "crons": [
+    {
+      "path": "/api/send-notity-movies",
+      "schedule": "12 13 * * *" 
+    }
   ]
 }
